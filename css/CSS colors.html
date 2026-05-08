@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Inline Styles and Colors</title>
+    
+    <style>
+        /* This styles all divs to have some spacing and rounded corners */
+        div {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Using classes makes it easier to manage colors */
+        .danger { background-color: red; color: white; }
+        .warning { background-color: yellow; color: blue; }
+        .info { background-color: blue; color: yellow; }
+        
+        h1 { margin: 0; font-family: sans-serif; }
+    </style>
+</head>
+<body>
+
+    <h1>Colors can be set using color names</h1>
+
+    <div class="danger">
+        <h1>Heading</h1>
+    </div>
+
+    <div class="warning">
+        <h1>Heading</h1>
+    </div>
+
+    <div class="info">
+        <h1>Heading</h1>
+    </div>
+
+</body>
+</html>

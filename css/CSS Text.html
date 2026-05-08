@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ID Selector Practice</title>
+    
+    <style>
+        /* This styles EVERY paragraph tag */
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        /* This styles ONLY the element with id="para1" */
+        /* In CSS, '#' means ID */
+        #para1 {
+            color: #e67e22;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Every paragraph will be affected by the style.</p>
+    
+    <p id="para1">Me too! (I am unique because of my ID)</p>
+    
+    <p>And me!</p>
+
+</body>
+</html>

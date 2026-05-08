@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Descendant Combinators</title>
+    
+    <style>
+        /* The Descendant Combinator (Space) */
+        /* This targets any <p> that is inside a <div> */
+        div p {
+            background-color: yellow;
+            color: black;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        /* Styling the div container to see it clearly */
+        div {
+            border: 2px solid #333;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Descendant Combinator (space)</h2>
+    
+    <p>The descendant combinator matches all elements that are descendants of a specified element.</p>
+
+    <div>
+        <p>Paragraph 1 in the div. (I will be yellow)</p>
+        <p>Paragraph 2 in the div. (I will be yellow)</p>
+        <section>
+            <p>Paragraph 3 in the div. (Even inside a section, I'm still in a div!)</p>
+        </section>
+    </div>
+
+    <p>Paragraph 4. Not in a div. (I stay normal)</p>
+    <p>Paragraph 5. Not in a div. (I stay normal)</p>
+
+</body>
+</html>
