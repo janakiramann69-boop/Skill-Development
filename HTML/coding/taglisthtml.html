@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata and Document Info -->
+  <meta charset="UTF-8">
+  <title>The Master HTML5 Reference</title>
+  <base href="https://example.com/" target="_blank">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+    section { margin-bottom: 40px; border-bottom: 1px solid #ccc; padding-bottom: 20px; }
+  </style>
+  <script> /* console.log("Script loaded"); */ </script>
+</head>
+
+<body>
+
+  <header>
+    <h1>HTML5 Tags Reference</h1>
+    <nav>
+      <a href="#text">Text</a> | <a href="#media">Media</a> | <a href="#forms">Forms</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section 1: Semantic Layout -->
+    <section id="layout">
+      <article>
+        <h2>Article Heading</h2>
+        <p>This is an article with an <aside>aside note</aside>.</p>
+      </article>
+      <details>
+        <summary>Click to see more details</summary>
+        <p>This content was hidden inside the <code>&lt;details&gt;</code> tag.</p>
+      </details>
+    </section>
+
+    <!-- Section 2: Text Formatting & Phrases -->
+    <section id="text">
+      <p>
+        <b>Bold</b>, <strong>Strong</strong>, <i>Italic</i>, <em>Emphasized</em>, 
+        <mark>Marked</mark>, <small>Small</small>, <del>Deleted</del>, <ins>Inserted</ins>, 
+        <sub>Subscript</sub>, <sup>Superscript</sup>, <s>Strikethrough</s>, and <u>Underlined</u>.
+      </p>
+      <p>An abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+      <p>Code sample: <code>print("Hello World")</code></p>
+      <p>Keyboard input: <kbd>Ctrl + C</kbd></p>
+      <p>Variable: <var>x</var> = <samp>Sample output</samp></p>
+      <blockquote>This is a long quotation from another source.</blockquote>
+      <address>Written by <a href="mailto:webmaster@example.com">Jon Doe</a></address>
+    </section>
+
+    <!-- Section 3: Forms & Inputs -->
+    <section id="forms">
+      <form action="/submit" method="POST">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" required>
+          
+          <label>Favorite Color: <input type="color" name="color"></label>
+          <label>Birth Date: <input type="date" name="bday"></label>
+          
+          <input type="hidden" name="user_id" value="12345">
+        </fieldset>
+
+        <label for="browser">Choose a browser:</label>
+        <input list="browsers" id="browser" name="browser">
+        <datalist id="browsers">
+          <option value="Chrome">
+          <option value="Firefox">
+          <option value="Safari">
+        </datalist>
+
+        <progress value="70" max="100">70%</progress>
+        <meter value="2" min="0" max="10">2 out of 10</meter>
+        
+        <br><button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Section 4: Media & Graphics -->
+    <section id="media">
+      <figure>
+        <img src="https://via.placeholder.com/150" alt="Placeholder">
+        <figcaption>Fig.1 - A placeholder image.</figcaption>
+      </figure>
+
+      <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+      </video>
+
+      <audio controls>
+        <source src="horse.mp3" type="audio/mpeg">
+      </audio>
+
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+      </svg>
+
+      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+    </section>
+
+    <!-- Section 5: Tables -->
+    <section id="tables">
+      <table>
+        <caption>Monthly Savings</caption>
+        <thead>
+          <tr><th>Month</th><th>Savings</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>January</td><td>$100</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td>Sum</td><td>$100</td></tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Semantic Web Tutorial</p>
+  </footer>
+
+  <noscript>Your browser does not support JavaScript!</noscript>
+
+</body>
+</html>

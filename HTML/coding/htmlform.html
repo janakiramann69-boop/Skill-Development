@@ -1,0 +1,15 @@
+<form action="/submit-data" method="POST">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <p>Preferred Contact Method:</p>
+  <input type="radio" id="email-contact" name="contact" value="email">
+  <label for="email-contact">Email</label>
+  <input type="radio" id="phone-contact" name="contact" value="phone">
+  <label for="phone-contact">Phone</label>
+
+  <button type="submit">Submit</button>
+</form>
