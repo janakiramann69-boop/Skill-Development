@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Company Website</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* HEADER */
+
+header{
+    background:#111;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+}
+
+/* LOGIN SECTION */
+
+.login-box{
+    width:350px;
+    background:white;
+    margin:40px auto;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.login-box h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.login-box button{
+    width:100%;
+    padding:12px;
+    background:#0077ff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.login-box button:hover{
+    background:#005fd1;
+}
+
+/* PRODUCTS */
+
+.products{
+    padding:40px;
+    text-align:center;
+}
+
+.products h2{
+    margin-bottom:30px;
+}
+
+.product-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:280px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.57);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.price{
+    color:green;
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.card button{
+    padding:10px 20px;
+    border:none;
+    background:#111;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* ORDER FORM */
+
+.order-section{
+    background:white;
+    width:500px;
+    margin:40px auto;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.order-section h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.order-section input,
+.order-section textarea,
+.order-section select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.order-section button{
+    width:100%;
+    padding:12px;
+    background:green;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mobile World Company</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Login</a>
+        <a href="#">Mobiles</a>
+        <a href="#">Order</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<!-- LOGIN PAGE -->
+
+<div class="login-box">
+
+    <h2>Login Page</h2>
+
+    <form>
+        <input type="email" placeholder="Enter Email">
+
+        <input type="password" placeholder="Enter Password">
+
+        <button type="submit">Login</button>
+    </form>
+
+</div>
+
+<!-- PRODUCTS -->
+
+<section class="products">
+
+    <h2>Latest Mobiles</h2>
+
+    <div class="product-container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Mobile">
+
+            <h3>iPhone 16 Pro</h3>
+
+            <p class="price">₹1,29,999</p>
+
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97" alt="Mobile">
+
+            <h3>Samsung S25 Ultra</h3>
+
+            <p class="price">₹1,10,000</p>
+
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5" alt="Mobile">
+
+            <h3>OnePlus 13</h3>
+
+            <p class="price">₹69,999</p>
+
+            <button>Buy Now</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ORDER FORM -->
+
+<div class="order-section">
+
+    <h2>Place Your Order</h2>
+
+    <form>
+
+        <input type="text" placeholder="Enter Full Name">
+
+        <input type="tel" placeholder="Enter Mobile Number">
+
+        <select>
+            <option>Select Mobile</option>
+            <option>iPhone 16 Pro</option>
+            <option>Samsung S25 Ultra</option>
+            <option>OnePlus 13</option>
+        </select>
+
+        <textarea rows="4" placeholder="Enter Delivery Address"></textarea>
+
+        <button type="submit">Place Order</button>
+
+    </form>
+
+</div>
+
+<footer>
+
+    <h3>Mobile World Company</h3>
+
+    <p>Professional Mobile Shopping Website</p>
+
+</footer>
+
+</body>
+</html>
